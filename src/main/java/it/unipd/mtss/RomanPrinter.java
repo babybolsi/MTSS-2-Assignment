@@ -89,7 +89,7 @@ public class RomanPrinter {
         converter = conMap;
     }
 
-    public static String print(int num) {
+    public static String print(int num) throws NumeriNegativiException,BigNumberException{
         return printAsciiArt(IntegerToRoman.convert(num));
     }
 

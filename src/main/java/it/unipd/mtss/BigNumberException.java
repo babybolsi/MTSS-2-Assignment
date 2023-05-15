@@ -1,0 +1,11 @@
+////////////////////////////////////////////////////////////////////
+// FRANCESCO BASSANI 2042375
+// IRENE CIRIOLO 2043682
+////////////////////////////////////////////////////////////////////
+package it.unipd.mtss;
+
+public class BigNumberException extends Exception{
+    public BigNumberException(){
+        super("Numero troppo grande");
+    }
+}

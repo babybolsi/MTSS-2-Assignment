@@ -10,8 +10,13 @@ public class IntegerToRoman {
     private static final String[] romanLiterals = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV",
             "I" };
 
-    public static String convert(int number) {
-
+    public static String convert(int number) throws NumeriNegativiException,BigNumberException {
+        if(number<0){
+            throw new NumeriNegativiException();
+        }
+        if(number>1000){
+            throw new BigNumberException();
+        }
         StringBuilder s = new StringBuilder();
 
         int remaining = number;
